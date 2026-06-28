@@ -39,8 +39,8 @@ html, body, [class*="css"] {
 }
 
 .block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     max-width: 700px;
 }
 
@@ -200,7 +200,7 @@ h1, h2, h3 {
                       url('https://raw.githubusercontent.com/malupertence-creator/rifa-casamento/main/folhas%20direito.png');
     background-position: left top, right top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 13vw 100%, 13vw 100%;
+    background-size: 18vw 100%, 18vw 100%;
     background-attachment: fixed, fixed;
 }
 
