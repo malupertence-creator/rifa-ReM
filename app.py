@@ -249,25 +249,39 @@ total_reservados = len(reservados)
 total_disponiveis = TOTAL_NUMS - total_reservados
 
 # ── HERO ──────────────────────────────────────────────────────────────────────
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
+# Hero layout with leaves
+left_col, center_col, right_col = st.columns([1, 3, 1])
+
+with left_col:
     try:
-        st.image("hero.png", use_container_width=True)
+        st.image("folhas esquerdo.png", use_container_width=True)
     except:
         pass
 
-st.markdown("""
+with center_col:
+    try:
+        c1, c2, c3 = st.columns([1, 2, 1])
+        with c2:
+            st.image("hero.png", use_container_width=True)
+    except:
+        pass
+    st.markdown("""
 <div class="hero">
   <div class="hero-date">02 · 10 · 2027</div>
   <div class="hero-title">RAFAEL & MARIA LUIZA</div>
   <div class="hero-sub">Participe e ajude a celebrar o nosso amor</div>
 </div>
 """, unsafe_allow_html=True)
-
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
     try:
-        st.image("casal.png", use_container_width=True)
+        c1, c2, c3 = st.columns([1, 2, 1])
+        with c2:
+            st.image("casal.png", use_container_width=True)
+    except:
+        pass
+
+with right_col:
+    try:
+        st.image("folhas direito.png", use_container_width=True)
     except:
         pass
 
