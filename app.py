@@ -72,6 +72,8 @@ h1, h2, h3 {
     letter-spacing: 0.08em;
     color: #3D4A35;
     line-height: 1.1;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-sub {
@@ -199,8 +201,9 @@ h1, h2, h3 {
     background-image: url('https://raw.githubusercontent.com/malupertence-creator/rifa-casamento/main/folhas%20esquerdo.png'),
                       url('https://raw.githubusercontent.com/malupertence-creator/rifa-casamento/main/folhas%20direito.png');
     background-position: left top, right top;
+    background-attachment: fixed, fixed;
     background-repeat: no-repeat, no-repeat;
-    background-size: 18vw 100%, 18vw 100%;
+    background-size: 22vw auto, 22vw auto;
     background-attachment: fixed, fixed;
 }
 
@@ -278,7 +281,7 @@ with center_col:
     st.markdown("""
 <div class="hero">
   <div class="hero-date">02 · 10 · 2027</div>
-  <div class="hero-title" style="white-space:nowrap;font-size:clamp(1.4rem,3.5vw,2.6rem);">RAFAEL & MARIA LUIZA</div>
+  <div class="hero-title" style="white-space:nowrap;font-size:clamp(1.4rem,3.5vw,2.6rem);text-align:center;width:100%;">RAFAEL & MARIA LUIZA</div>
   <div class="hero-sub">Participe e ajude a celebrar o nosso amor</div>
 </div>
 """, unsafe_allow_html=True)
